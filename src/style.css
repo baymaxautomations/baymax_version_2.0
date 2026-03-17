@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --text-h1: 57px;
+  --text-h2: 50px;
+  --text-h3: 40px;
+  --text-h4: 30px;
+  --text-h5: 24px;
+  --text-h6: 18px;
+  --text-h7: 14px;
+  --text-h5-semi: 22px;
+  --color-primary-white: #fff;
+  --color-primary-black: #000;
+  --color-primary-grey: #cccccc;
+  --color-secondary-grey: #3c3c43;
+  --color-primary-red: #f00;
+}
+
+@layer components {
+  .cardHero {
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 260/190;
+    overflow: hidden;
+  }
+
+  .cardHero>img {
+    scale: 1.2;
+    object-position: center;
+  }
+
+  .section {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .horizontalCards {
+    width: w-screen;
+    max-width: 1024px;
+    aspect-ratio: 1024/589;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 20px;
+    display: flex;
+    flex-shrink: none;
+  }
+
+  .horizontalCards>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+  }
+
+  .horizontalCardsContent {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1.6fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+  }
+
+  .horizontalCardsContent {
+    @apply max-sm:flex max-sm:flex-col max-sm:justify-center;
+  }
+
+  .horizontalCardsContent>.part1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--text-h4);
+    @apply max-sm:h-fit
+  }
+
+  .horizontalCardsContent>.part1>p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .horizontalCardsContent>.part2 {
+    grid-area: 2/1/2/2;
+    font-size: var(--text-h5-semi);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .horizontalCardsContent>.part2>button {
+    font-size: var(--text-h4);
+    font-weight: bold;
+    color: var(--color-primary-grey);
+    width: fit-content;
+    cursor: pointer;
+    opacity: 60%;
+  }
+}
+
+/* Add to your global CSS */
+.pin-spacer {
+  background-color: #000 !important; /* your primary-black */
+}

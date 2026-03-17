@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baymax_automations</title>
+  <style href="../style.css"></style>
+</head>
+
+<body>
+  <header class="w-full flex justify-center sticky z-3000 top-0 bg-primary-white/80 backdrop-blur-sm">
+    <nav class="max-w-[1024px] flex w-full py-1 px-4">
+      <div id="logo" class="flex gap-2 items-center">
+        <img src="/logo.svg" alt="logo" class="object-contain h-[18px]">
+        <span class="text-h6 max-md:hidden">BAYMAX AUTOMATIONS</span>
+      </div>
+      <div id="login" class="flex-1 flex justify-end">
+        <button class="text-h6 border-2 border-primary-black px-2 cursor-pointer">login</button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="flex flex-col gap-3">
+    <section id="hero" class="flex justify-center items-center h-[600px] max-sm:h-[500px] w-full relative">
+      <div id="heroText" class="flex flex-col absolute z-200">
+        <p class="text-center text-h6 font-bold max-[400px]:text-h6">In the age of AI, it's been about</p>
+        <p class="text-center text-h6 max-[400px]:text-h6" id="clock"></p>
+        <p class="text-center text-h6 max-[400px]:text-h6">since you tried us.</p>
+      </div>
+
+      <!-- bg-gradient-to-r from-[#fafafa] via-primary-white to-[#fafafa] -->
+
+
+      <div id="mainText"
+        class="w-full max-w-[1024px] bg-gradient-to-r from-[#fafafa] via-primary-white to-[#fafafa] absolute z-100 flex h-full flex-col justify-between overflow-hidden">
+        <div id="cardsUpRow" class="w-full h-fit flex justify-between -translate-y-[20%] gap-8 relative max-md:gap-4 max-sm:px-2 sm:max-lg:px-3">
+          <div class="cardHero h-full object-cover translate-y-[-30%]">
+            <img src="/images/card-1.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover translate-y-[-20%]">
+            <img src="/images/card-2.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover translate-y-[-10%]">
+            <img src="/images/card-3.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover max-sm:hidden translate-y-[0%]">
+            <img src="/images/card-4.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover max-sm:hidden translate-y-[10%] max-lg:hidden">
+            <img src="/images/card-5.png" class="h-full w-full object-cover">
+          </div>
+        </div>
+
+        <div id="cardsUpDown" class="w-full h-fit flex justify-between translate-y-[50%] gap-8 relative max-md:gap-4 max-sm:px-2 sm:max-lg:px-3">
+          <div class="cardHero h-full object-cover translate-y-[-20%]">
+            <img src="/images/card-6.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover translate-y-[-10%]">
+            <img src="/images/card-2.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover translate-y-[-0%]">
+            <img src="/images/card-3.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover max-sm:hidden translate-y-[10%]">
+            <img src="/images/card-4.png" class="h-full w-full object-cover">
+          </div>
+          <div class="cardHero h-full object-cover max-sm:hidden translate-y-[20%] max-lg:hidden">
+            <img src="/images/card-5.png" class="h-full w-full object-cover">
+          </div>
+        </div>
+
+        <!-- <div id="cardsUpDown" class="w-full h-fit flex justify-between translate-y-[50%]">
+            <div class="cardHero h-65 object-cover">
+              <img src="/images/card-6.png" class="h-full w-full object-cover">  
+            </div>
+            <div class="cardHero h-65 object-cover">
+              <img src="/images/card-2.png" class="h-full w-full object-cover">  
+            </div>
+            <div class="cardHero h-65 object-cover">
+              <img src="/images/card-3.png" class="h-full w-full object-cover">  
+            </div>
+            <div class="cardHero h-65 object-cover">
+              <img src="/images/card-4.png" class="h-full w-full object-cover">  
+            </div>
+            <div class="cardHero h-65 object-cover">
+              <img src="/images/card-5.png" class="h-full w-full object-cover">  
+            </div>
+          </div> -->
+      </div>
+
+
+
+      <div id="background" class="h-full bg-primary-grey w-full opacity-10 absolute z-0"></div>
+    </section>
+
+    <section class="w-full flex justify-center">
+      <div class="flex">
+        <p class="text-h6 whitespace-nowrap max-[400px]:text-h7">By <span class="font-bold">Automations</span> we create <span class="font-bold">New
+            Experiences.</span></p>
+      </div>
+    </section>
+
+    <!-- <section class="flex justify-center items-center h-[600px] max-sm:h-[500px] w-full relative">
+        
+      </section>       -->
+
+    <!-- <section class="flex justify-center items-center w-full relative">
+
+      <div class="w-full max-w-[1024px] flex flex-col h-full p-3">
+        <div class="text-h5 mb-2 max-sm:text-h6">
+          Recent <span class="font-bold">Deliveries</span>
+        </div>
+
+        <div id="horizontal-cards" class="inline-block">
+          <div class="horizontalCards">
+            <div class="horizontalCardsContent">
+              <div class="part1">
+                <p><span class="font-bold">Artificial</span> <span>Personal</span> <span>Assistant</span></p>
+              </div>
+              <div class="part2">
+                <div class="max-sm:hidden">
+                  <span class="font-bold text-h4">I</span> can handle all of your daily tasks and office work and let you get notified via daily reports, schedule...
+                </div>
+                <button>Learn More &#8594;</button>
+              </div>
+            </div>
+            <img src="/cards/first-product.png" alt="artificial personal assistant">
+          </div>
+
+          <div class="horizontalCards">
+            <div class="horizontalCardsContent">
+              <div class="part1 text-primary-white">
+                <p><span class="font-bold">Artificial</span> <span>Customer</span> <span>Service Expert</span></p>
+              </div>
+              <div class="part2">
+                <div class="text-primary-white max-sm:hidden">
+                  <span class="font-bold text-h4">I</span> can handle all the customer query, managing their appointments, and...
+                </div>
+                <button class="text-secondary-grey">Learn More &#8594;</button>
+              </div>
+            </div>
+            <img src="/cards/second-product.png" alt="artificial customer service expert">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="h-full w-full bg-primary-grey absolute opacity-10"></div>
+    </section> -->
+
+    <section class="flex justify-center items-center h-fit w-full relative">
+      <div class="content flex h-full w-full max-w-[1024px] flex-col gap-2 py-4 relative z-100 sm:max-lg:px-3">
+
+        <div class="section-title text-h6 px-1 max-md:px-2">Recent <span class="font-bold">Deliveries.</span></div>
+        
+        <!-- check below code -->
+        <div class="section-cards w-full max-md:px-2" id="cards-viewer">
+          <div class="flex overflow-x-scroll scroll-smooth snap-x snap-mandatory gap-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden *:rounded-[40px] *:max-sm:rounded-2xl">
+           
+            <!-- card 1 -->
+            <div class="w-full aspect-video shrink-0 snap-start overflow-hidden relative grid grid-rows-[1fr_0.6fr] md:grid-rows-2 gap-10 px-15 max-sm:px-6 max-sm:gap-4" id="card">
+              
+              <div id="card-title" class="relative z-100 h-full w-full text-h4/tight max-sm:text-h6/tight">
+                <div class="flex flex-col justify-end h-full">
+                  <span class="font-bold">Artificial</span>
+                  <span>Personal</span>
+                  <span>Assistant.</span>
+                </div>
+              </div>
+
+              <div id="card-body" class="relative z-100 h-full w-[40%] row-start-2 col-start-1 flex flex-col *:w-fit">
+                <div id="card-description" class="text-h5 max-sm:hidden h-[60%] overflow-hidden"><span class="font-bold text-h4">I</span> can handle all of your daily tasks and office work and let you get notified via daily reports, schedule...</div>
+                <button class="text-h4 max-sm:text-h6 font-bold text-primary-grey opacity-60 cursor-pointer whitespace-nowrap">Learn More &#8594;</button>
+              </div>
+              
+
+              <img src="/cards/product-1.png" alt="Artifical Personal Assistant" class="absolute object-cover scale-110 inset-0">
+            </div>
+
+
+            <!-- card 2 -->
+
+            <div class="w-full aspect-video shrink-0 snap-start overflow-hidden relative grid grid-rows-[1fr_0.6fr] md:grid-rows-2 gap-10 px-15 max-sm:px-6 max-sm:gap-4" id="card">
+              
+              <div id="card-title" class="relative z-100 h-full w-full text-h4/tight max-sm:text-h6/tight text-primary-white">
+                <div class="flex flex-col justify-end h-full">
+                  <span class="font-bold">Artificial</span>
+                  <span>Customer</span>
+                  <span>Service Expert.</span>
+                </div>
+              </div>
+
+              <div id="card-body" class="relative z-100 h-full w-[40%] row-start-2 col-start-1 flex flex-col *:w-fit text-primary-white">
+                <div id="card-description" class="text-h5 max-sm:hidden h-[60%] overflow-hidden"><span class="font-bold text-h4">I</span> can handle all the customer query, managing their appointments, and...</div>
+                <button class="text-h4 max-sm:text-h6 font-bold text-secondary-grey opacity-60 cursor-pointer whitespace-nowrap">Learn More &#8594;</button>
+              </div>
+              
+
+              <img src="/cards/product-2.png" alt="Artifical Customer Service Expert" class="absolute object-cover scale-110 inset-0">
+            </div>
+
+
+            <!-- card 3 -->
+
+            <div class="w-full aspect-video shrink-0 snap-start overflow-hidden relative grid grid-rows-[1fr_0.6fr] md:grid-rows-2 gap-10 px-15 max-sm:px-6 max-sm:gap-4" id="card">
+              
+              <div id="card-title" class=""></div>
+
+              <div id="card-body" class="relative z-100 h-full w-[40%] row-start-2 col-start-1 flex flex-col *:w-fit text-primary-white">
+                <div id="card-description" class="text-h5 max-sm:hidden h-[60%] overflow-hidden"></div>
+                <button class="text-h4 max-sm:text-h6 font-bold text-primary-white opacity-60 cursor-pointer whitespace-nowrap">Explore More &#8594;</button>
+              </div>
+              
+
+              <img src="/cards/product-3.png" alt="Artifical Customer Service Expert" class="absolute object-cover scale-110 inset-0">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="h-full absolute z-0 w-full bg-primary-grey opacity-10"></div>
+    </section>
+  
+
+
+    <!-- snapshot of experiences section -->
+    <section class="flex justify-center items-center h-fit w-full relative">
+      <div class="content flex h-full w-full max-w-[1024px] flex-col gap-2 py-4 relative z-100 sm:max-lg:px-3">
+
+        <div class="section-title text-h6 px-1 max-md:px-2"> <span class="font-bold">Snapshot</span> of Experiences.</div>
+        
+        <!-- check below code -->
+        <div class="section-cards w-full max-md:px-2" id="cards-viewer">
+          <div class="h-90 max-sm:h-50 flex overflow-x-scroll gap-6 max-md:gap-4 max-sm:gap-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden *:rounded-[40px] *:max-sm:rounded-2xl">
+           
+            <!-- card 1 -->
+            <div class="h-full aspect-[617/771] relative overflow-hidden shrink-0 p-[5%] max-sm:px-[3%]">
+              <p class="relative z-100 text-primary-white *:font-bold text-h6 w-[65%] max-sm:text-h7 max-sm:w-[70%]"><span>Surprising customers</span> at late night <span>responses.</span></p>
+              <img src="/experiences/1.webp" alt="late_night_chatting" class="absolute z-0 top-0 left-0 object-cover object-top">
+            </div>
+
+            <!-- card 2 -->
+            <div class="h-full aspect-[617/771] relative overflow-hidden shrink-0 p-[5%] max-sm:px-[3%]">
+              <p class="relative z-100 text-primary-black *:font-bold text-h6 w-[65%] max-sm:text-h7 max-sm:w-[70%]">Delivering the <span>intelligent</span> content that <span>listens to you.</span></p>
+              <img src="/experiences/2.webp" alt="late_night_chatting" class="absolute z-0 top-0 left-0 object-cover object-top">
+            </div>
+
+            <!-- card 3 -->
+            <div class="h-full aspect-[617/771] relative overflow-hidden shrink-0 p-[5%] max-sm:px-[3%]">
+              <p class="relative z-100 text-primary-white text-shadow-xs text-shadow-secondary-grey *:font-bold text-h6 w-[65%] max-sm:text-h7 max-sm:w-[70%]">Delivering the <span>intelligent</span> content that <span>listens to you.</span></p>
+              <img src="/experiences/3.webp" alt="late_night_chatting" class="absolute z-0 top-0 left-0 object-cover object-top">
+            </div>
+            
+            <!-- card 3 -->
+            <div class="h-full aspect-[617/771] relative overflow-hidden shrink-0 p-[5%] max-sm:px-[3%]">
+              <p class="relative z-100 text-primary-black text-shadow-xs text-shadow-secondary-grey *:font-bold text-h6 w-[65%] max-sm:text-h7 max-sm:w-[70%]">Add new automations <span>metrics</span> to the <span>business.</span></p>
+              <img src="/experiences/4.webp" alt="late_night_chatting" class="absolute z-0 top-0 left-0 object-cover object-top">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="h-full absolute z-0 w-full bg-primary-grey opacity-10"></div>
+    </section>
+
+    <section class="w-full flex justify-center">
+      <div class="flex w-full max-w-[1024px] max-md:px-2 sm:max-lg:px-3">
+        <p class="text-h6 whitespace-nowrap max-[400px]:text-h6 *:font-bold"><span>Lets</span> take a <span>look</span></p>
+      </div>
+    </section>
+
+    <!-- section for gsap animation -->
+    <section class="overflow-hidden">
+      <div class="w-full bg-primary-black flex justify-center">
+        <div class="w-full max-w-[1024px] flex flex-col">
+
+          <!-- scroll it x on scroll of y #scrollanimations -->
+          <div id="content" class="w-full *:max-w-[1024px] *:w-full *:aspect-video *:max-md:aspect-[9/12] flex relative max-md:gap-10 *:relative *:shrink-0 overflow-x-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden will-change-[scroll-position]">
+            
+            <!-- card 1 -->
+            <div class="grid grid-cols-2 grid-rows-1 max-sm:flex max-sm:flex-col-reverse max-sm:justify-end max-sm:items-center items-center gap-10 max-sm:gap-0 max-sm:mb-2">
+              
+              <p class="max-w-[80%] sm:justify-self-end text-h4/tight max-lg:text-h5/tight max-sm:text-h5/tight text-primary-white *:font-bold max-sm:my-10">Say you are a <span class="text-h3 max-sm:text-h4/tight">Doctor</span> and you wanna to respond to your patients <span class="font-bold">intelligently 24*7.</span></p>
+              
+              <div class="aspect-[400/500] overflow-hidden w-[70%] rounded-xl max-sm:w-full max-sm:aspect-square max-sm:rounded-none">
+                <img src="/animes/img-1.jpg" alt="doctor">
+              </div>
+
+            </div>
+
+            <!-- card 2 -->
+            <div class="grid grid-cols-2 grid-rows-1 max-sm:flex max-sm:flex-col max-sm:justify-end max-sm:items-center items-center gap-10 max-sm:gap-0 max-sm:mb-2">
+              
+              <p class="max-w-[80%] sm:justify-self-end text-h4/tight max-lg:text-h5/tight max-sm:text-h5/tight text-primary-white *:font-bold max-sm:my-10">You <span class="text-h3 max-sm:text-h4">reach</span> us.<br> We <span class="text-h3 max-sm:text-h4">design</span> systems based on your given constrains.</p>
+              
+              <div class="aspect-[400/500] overflow-hidden w-[70%] rounded-xl max-sm:w-full max-sm:aspect-square max-sm:rounded-none">
+                <img src="/animes/img-2.jpg" alt="application">
+              </div>
+
+            </div>
+
+            <!-- card 3 -->
+            <div class="grid grid-cols-2 grid-rows-1 max-sm:flex max-sm:flex-col-reverse max-sm:justify-end max-sm:items-center items-center gap-10 max-sm:gap-0 max-sm:mb-2">
+              
+              <p class="max-w-[80%] sm:justify-self-end text-h4/tight max-lg:text-h5/tight max-sm:text-h5/tight text-primary-white *:font-bold max-sm:my-10">We add an <span class="text-h3 max-sm:text-h4"> intelligent layer </span>to the <span class="text-h3 max-sm:text-h4">product.</span></p>
+              
+              <div class="aspect-[400/500] overflow-hidden w-[70%] rounded-xl max-sm:w-full max-sm:aspect-square max-sm:rounded-none">
+                <img src="/animes/img-3.png" alt="intelligence-layer" class="object-cover h-full w-full">
+              </div>
+
+            </div>
+
+            <!-- card 4 -->
+            <div class="grid grid-cols-2 grid-rows-1 max-sm:flex max-sm:flex-col max-sm:justify-end max-sm:items-center items-center gap-10 max-sm:gap-0 max-sm:mb-2">
+              
+              <p class="max-w-[80%] sm:justify-self-end text-h4/tight max-lg:text-h5/tight max-sm:text-h5/tight text-primary-white *:font-bold max-sm:my-10">Get your product. <br><span class="text-h3 max-sm:text-h4">Future upgrades</span> also <span class="text-h3 max-sm:text-h4">packed.</p>
+              
+              <div class="aspect-[400/500] overflow-hidden w-[70%] rounded-xl max-sm:w-full max-sm:aspect-square max-sm:rounded-none">
+                <img src="/animes/img-4.png" alt="finalized_product" class="object-cover h-full w-full">
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- <div class="w-full h-full grid grid-cols-2 items-center max-sm:flex max-sm:flex-col-reverse shrink-0 max-sm:py-4" id="animScreen1">
+            <p class="w-full text-h4/tight max-sm:text-h7/tight max-w-[80%] justify-self-end text-primary-white *:font-bold max-sm:h-full">Say you are a <span class="text-h3 max-sm:text-h5/tight">Doctor</span> and you wanna to respond to your patients <span class="font-bold">intelligently 24*7.</span></p>
+            <div class="aspect-[400/500] overflow-hidden w-[55%] rounded-[40px] max-sm:rounded-2xl max-sm:aspect-[16/9] justify-self-center">
+              <img src="/animes/img-1.jpg" alt="doctor">
+            </div>
+          </div> -->
+          
+
+          <!-- second screen -->
+          <!-- <div class="w-full h-full grid grid-cols-2 items-center shrink-0 hidden" id="animScreen1">
+            <p class="w-full text-h4/tight max-sm:text-h7/tight max-w-[80%] justify-self-end text-primary-white *:font-bold">You <span class="text-h3">reach</span> us.<br> We <span class="text-h3">design</span> systems based on your given constrains.</p>
+            <div class="aspect-[400/500] overflow-hidden w-[55%] rounded-[40px] justify-self-center">
+              <img src="/animes/img-2.jpg" alt="application">
+            </div>
+          </div> -->
+
+
+          <!-- third screen -->
+          <!-- <div class="w-full h-full grid grid-cols-2 items-center shrink-0 hidden" id="animScreen1">
+            <p class="w-full text-h4/tight max-sm:text-h7/tight max-w-[80%] justify-self-end text-primary-white *:font-bold">We add an <span class="text-h3"> intelligent layer </span>to the <span class="text-h3">product.</span></p>
+            <div class="aspect-[400/500] overflow-hidden w-[55%] rounded-[40px] justify-self-center">
+              <img src="/animes/img-3.png" alt="intelligence_layer">
+            </div>
+          </div> -->
+
+
+          <!-- fourth screen -->
+          <!-- <div class="w-full h-full grid grid-cols-2 items-center shrink-0 hidden" id="animScreen1">
+            <p class="w-full text-h4/tight max-sm:text-h7/tight max-w-[80%] justify-self-end text-primary-white *:font-bold">Get your product. <br><span class="text-h3">Future upgrades</span> also <span class="text-h3">packed.</span></p>
+            <div class="aspect-[400/500] overflow-hidden w-[55%] rounded-[40px] justify-self-center">
+              <img src="/animes/img-4.png" alt="finalized_product">
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+    
+    <section class="flex justify-center items-center h-fit w-full relative">
+      
+      <div class="content w-full max-w-[1024px] aspect-video flex flex-col justify-center max-sm:items-center gap-2 p-4 relative z-100 sm:max-lg:px-3">
+
+        <div class="text-content">
+          <p class="font-bold text-h3 max-sm:text-h5 max-sm:text-center">Core Element</p>
+          <div>
+            <span class="text-h4 max-sm:text-h6 md:block">What you <span class="underline font-bold text-primary-red underline-offset-4">THINK</span></span>
+            <span class="text-h4 max-sm:text-h6 md:block">is what we <span class="underline font-bold underline-offset-4">MAKE</span></span>
+          </div>
+        </div>
+
+        <div class="absolute max-sm:relative z-50 right-0 aspect-square h-[80%] max-sm:h-auto max-sm:w-[60%] order-first">
+          <img src="/sections/think_1.png" alt="thinker" class="object-cover">
+        </div>
+      </div>
+
+      <div class="h-full absolute z-0 w-full bg-primary-grey opacity-10"></div>
+    </section>
+
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
