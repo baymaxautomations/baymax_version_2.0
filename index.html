@@ -369,22 +369,35 @@
     
     <section class="flex justify-center items-center h-fit w-full relative">
       
-      <div class="content w-full max-w-[1024px] aspect-video flex flex-col justify-center max-sm:items-center gap-2 p-4 relative z-100 sm:max-lg:px-3">
+      <div class="content w-full max-w-[1024px] aspect-video flex flex-col justify-center max-sm:items-center gap-2 p-4 relative z-100 sm:max-lg:px-8">
 
-        <div class="text-content">
-          <p class="font-bold text-h3 max-sm:text-h5 max-sm:text-center">Core Element</p>
+        <div class="text-content max-sm:mb-5">
+          <p class="font-bold text-h3 max-sm:text-h5 max-sm:text-center max-sm:pt-2">Core Element</p>
           <div>
             <span class="text-h4 max-sm:text-h6 md:block">What you <span class="underline font-bold text-primary-red underline-offset-4">THINK</span></span>
             <span class="text-h4 max-sm:text-h6 md:block">is what we <span class="underline font-bold underline-offset-4">MAKE</span></span>
           </div>
         </div>
 
-        <div class="absolute max-sm:relative z-50 right-0 aspect-square h-[80%] max-sm:h-auto max-sm:w-[60%] order-first">
-          <img src="/sections/think_1.png" alt="thinker" class="object-cover">
+        <div class="absolute max-sm:relative z-50 right-0 aspect-square h-[80%] max-sm:h-auto max-sm:w-[60%] max-sm:mt-10 max-sm:mb-6 order-first sm:max-lg:px-5">
+          <video autoplay muted loop playsinline poster="/sections/think_1.png">
+            <source src="/sections/think_square_2.mp4" type="video/mp4">
+            <!-- <source src="video.webm" type="video/webm"> -->
+          </video>
         </div>
       </div>
 
       <div class="h-full absolute z-0 w-full bg-primary-grey opacity-10"></div>
+    </section>
+
+    <section class="w-full relative flex justify-center">
+
+      <div class="w-full max-w-[1024px] aspect-video min-h-[500px] flex flex-col items-center">
+        
+        <div class="text-h3 font-bold">Contact Us</div>
+
+      </div>
+
     </section>
 
   </main>
