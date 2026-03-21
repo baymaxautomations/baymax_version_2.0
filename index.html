@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="w-full flex justify-center sticky z-3000 top-0 bg-primary-white/80 backdrop-blur-sm">
+  <header class="w-full flex justify-center sticky z-500 top-0 bg-primary-white/80 backdrop-blur-sm">
     <nav class="max-w-[1024px] flex w-full py-1 px-4">
       <div id="logo" class="flex gap-2 items-center">
         <img src="/logo.svg" alt="logo" class="object-contain h-[18px]">
@@ -22,7 +22,7 @@
   </header>
 
 
-  <main class="flex flex-col gap-3">
+  <main class="flex flex-col gap-3 max-sm:gap-2">
     <section id="hero" class="flex justify-center items-center h-[600px] max-sm:h-[500px] w-full relative">
       <div id="heroText" class="flex flex-col absolute z-200">
         <p class="text-center text-h6 font-bold max-[400px]:text-h6">In the age of AI, it's been about</p>
@@ -375,7 +375,7 @@
           <p class="font-bold text-h3 max-sm:text-h5 max-sm:text-center max-sm:pt-2">Core Element</p>
           <div>
             <span class="text-h4 max-sm:text-h6 md:block">What you <span class="underline font-bold text-primary-red underline-offset-4">THINK</span></span>
-            <span class="text-h4 max-sm:text-h6 md:block">is what we <span class="underline font-bold underline-offset-4">MAKE</span></span>
+            <span class="text-h4 max-sm:text-h  6 md:block">is what we <span class="underline font-bold underline-offset-4">MAKE</span></span>
           </div>
         </div>
 
@@ -390,7 +390,7 @@
       <div class="h-full absolute z-0 w-full bg-primary-grey opacity-10"></div>
     </section>
 
-    <section class="w-full relative flex justify-center py-4">
+    <section class="w-full relative flex justify-center py-4 max-sm:py-0">
 
       <div class="relative w-full max-w-[1024px] aspect-video max-sm:h-screen max-h-[700px] overflow-hidden rounded-[40px] max-lg:rounded-none">
         
@@ -409,6 +409,31 @@
     </section>
 
   </main>
+
+  <footer class="bg-primary-black flex flex-col justify-center items-center pt-5 pb-3 max-sm:px-4 relative z-1000">
+
+    <section class="flex flex-col w-full max-w-[1024px] text-white py-4">
+      
+      <div class="links w-full">
+        <ul class="flex max-sm:flex-col justify-between gap-1 text-h6 max-sm:text-h7/tight *:py-1 md:">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+      
+    </section>
+    
+    <div class="logo w-full max-w-[1024px] flex max-sm:flex-col-reverse items-center max-sm:items-start max-sm:gap-1 justify-between text-white  text-h7/tight max-sm:text-h8/tight">
+      <p>&copy; 2026 BAYMAX AUTOMATIONS</p>
+      <p>INDIA</p>
+    </div>
+
+  </footer>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 
